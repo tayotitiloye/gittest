@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <main>
-      <h1>Git hub Training</h1>  
+      <h1>Git hub Training</h1>    
       <ul>
         {data.map(p => (
           <div key={p.id}>
