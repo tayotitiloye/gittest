@@ -64,28 +64,3 @@ export default function Home() {
 
 
 
-export const linksExplore = [
-  { 
-    id: 1,
-    title: 'Home',
-    number: '00',
-  },
-  { 
-    id: 2,
-    title: 'Destination',
-    number: '01'
-           
-  },
-  { 
-    id: 3,
-    title: 'Crew',
-    number: '02'
-      },
-  { 
-    id: 4,
-    title: 'Technology',
-    number:'03'
-  },
-]
-
-
