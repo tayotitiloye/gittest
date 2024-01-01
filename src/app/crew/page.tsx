@@ -6,7 +6,9 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 
 async function getData() {
-  const res = await fetch('http://localhost:3000/api/crew')
+ // const res = await fetch('http://localhost:3000/api/crew')
+    const res = await fetch(`${process.env.URL_LINK}/api/crew`)
+
 
   if (!res.ok) {
     throw new Error('data fetch failed')

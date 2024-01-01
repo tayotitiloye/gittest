@@ -2,7 +2,9 @@ import Technology from '@/components/Technology'
 import React, { useState } from 'react'
 
 async function getData() {
-  const res = await fetch('http://localhost:3000/api/technology')
+ // const res = await fetch('http://localhost:3000/api/technology')
+    const res = await fetch(`${process.env.URL_LINK}/api/technology`)
+
 
   if (!res.ok) {
     throw new Error('data fetch failed')

@@ -6,7 +6,9 @@ import React from 'react'
 
 
 async function getData() {
-    const res = await fetch('http://localhost:3000/api/destination')
+   // const res = await fetch('http://localhost:3000/api/destination')
+    const res = await fetch(`${process.env.URL_LINK}/api/destination`)
+
     if (!res.ok) {
         throw new Error('unable to fetch data')
     }
